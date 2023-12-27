@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "724637160960",
+    "project_id": "luxelineup-94883",
+    "storage_bucket": "luxelineup-94883.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724637160960:android:79299944b3945114fc2ae5",
+        "android_client_info": {
+          "package_name": "com.example.luxel_lineup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUw92l0kQpGBwvMZPnFjeD20NQz37owBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
