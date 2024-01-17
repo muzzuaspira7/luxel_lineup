@@ -29,15 +29,15 @@ class reusableWidget {
                 children: [
                   Text(
                     name,
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontSize: 21,
                         fontFamily: 'BannerFont',
                         fontWeight: FontWeight.bold),
                   ),
                   Text(
                     subName,
-                    style: TextStyle(
-                        // fontSize: 16,
+                    style: const TextStyle(
+                        fontSize: 16,
                         fontFamily: 'BannerFont',
                         fontWeight: FontWeight.bold),
                   )
@@ -46,12 +46,15 @@ class reusableWidget {
             ),
           ),
           Expanded(
-              child: Image(
-            image: AssetImage(
+            // child: Image.network(
+            //   img,
+            //   fit: BoxFit.contain,
+            // ),
+            child: Image.asset(
               img,
+              fit: BoxFit.contain,
             ),
-            fit: BoxFit.contain,
-          )),
+          ),
         ],
       ),
     );

@@ -1,13 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:luxel_lineup/reusablewidget/reusable.dart';
-import 'package:luxel_lineup/reusablewidget/reusableCart.dart';
 import 'package:luxel_lineup/reusablewidget/reusable_futurebuilder.dart';
-import 'package:luxel_lineup/reusablewidget/reusableCart.dart';
 import 'package:luxel_lineup/view/addtocart.dart';
 import 'carousel.dart';
 import 'drawer.dart';
-import 'all_list.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -68,6 +65,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: [
                     Icon(Icons.camera_alt_rounded),
                     SizedBox(
+                      height: 30,
+                      width: 250,
                       child: TextField(
                         decoration: InputDecoration(
                           hintText: 'Search',
@@ -75,8 +74,6 @@ class _MyHomePageState extends State<MyHomePage> {
                           hintStyle: TextStyle(color: Colors.black),
                         ),
                       ),
-                      height: 30,
-                      width: 250,
                     ),
                     Icon(Icons.search),
                     Icon(Icons.mic),
@@ -104,6 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
             const SizedBox(height: 15),
             // Carousel
             const carousel(),
+
             const SizedBox(height: 15),
             // GridView for shirts
             ReusableFutureBuilder(

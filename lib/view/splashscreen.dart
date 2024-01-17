@@ -38,10 +38,10 @@ class _SplashScreenState extends State<SplashScreen> {
                 child: Image.asset('assets/images/dress-logo.png'),
               ),
               const SizedBox(
-                  height: 10), // Add some space between image and text
+                  height: 10), 
               // Wrap the Text widget with Opacity
               const Opacity(
-                opacity: 0.7, // Set the desired opacity value
+                opacity: 0.7, // Setting the desired opacity value
                 child: Text(
                   'LuxeLineup',
                   style: TextStyle(

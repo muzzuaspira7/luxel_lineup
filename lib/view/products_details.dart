@@ -6,7 +6,6 @@ class ProductsDetails extends StatefulWidget {
   final String documentNo;
   final String SubCollection;
   final String DressType;
-  // final Map<String, dynamic> productData;
   final num productData;
 
   const ProductsDetails({
@@ -220,22 +219,6 @@ class _ProductsDetailsState extends State<ProductsDetails> {
                           height: 50,
                           width: 155,
                           child: ElevatedButton(
-                            // onPressed: () {
-                            //   print(documentNumber);
-                            //   print(dressCollection);
-                            //   print(dressId);
-                            //   if (isAddedToCart) {
-                            //     _addToCart(documentNumber, dressCollection,
-                            //         dressId + 1, false);
-                            //   } else {
-                            //     _addToCart(documentNumber, dressCollection,
-                            //         dressId + 1, true);
-                            //   }
-
-                            //   setState(() {
-                            //     isAddedToCart = !isAddedToCart;
-                            //   });
-                            // },
                             onPressed: () {
                               print(documentNumber);
                               print(dressCollection);
@@ -248,7 +231,6 @@ class _ProductsDetailsState extends State<ProductsDetails> {
                                 isAddedToCart = !isAddedToCart;
                               });
                             },
-
                             child: Text(
                               isAddedToCart ? 'Remove Cart' : 'Add To Cart',
                               style: TextStyle(color: Colors.black),
@@ -265,7 +247,6 @@ class _ProductsDetailsState extends State<ProductsDetails> {
                           child: ElevatedButton(
                             onPressed: () {
                               print('Clicked on Buy Now');
-                              // Implement your logic here if needed
                             },
                             child: const Text(
                               'Buy Now',
